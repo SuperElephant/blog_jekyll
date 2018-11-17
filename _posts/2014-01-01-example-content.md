@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Example content
-tags: [jekyll, documentation, examples]
+tags: [jekyll, documentationssss, examples]
 ---
 
 
