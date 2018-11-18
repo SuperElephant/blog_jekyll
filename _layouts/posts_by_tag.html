@@ -11,7 +11,7 @@ layout: default
 {% capture post_tagged_message %}Posts tagged <em>{{ tag_name }}</em>{% endcapture %}
 {% assign no_posts_tagged_message = 'There are no posts with this tag.' %}
 
-<div class="page">
+<div>
   <h1 class="page-title">{{ post_tagged_message }}</h1>
     {% if site.tags[page.tag] %}
       {% for post in site.tags[page.tag] %}
