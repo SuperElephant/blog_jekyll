@@ -1,14 +1,19 @@
-- slug: jekyll
-  name: Jekyll
+- slug: chn
+  name: Chinese/中文
 
-- slug: documentation
-  name: Documentation
+- slug: eng
+  name: English/英文
 
-- slug: examples
-  name: Examples
+- slug: review
+  name: Review
+- slug: it
+  name: IT
 
-- slug: chinese
-  name: chinese
+- slug: think
+  name: Think
 
-- slug: support
-  name: 中文
+- slug: note
+  name: Note
+
+- slug: record
+  name: Record
