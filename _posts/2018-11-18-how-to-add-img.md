@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to add image in Jekyll
-tags: [eng, note]
+tags: [eng, note, it]
 ---
 
 To insert image in the blog we can simply use
