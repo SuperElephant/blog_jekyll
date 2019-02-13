@@ -4,7 +4,7 @@ title: Example content
 tags: [jekyll, documentationssss, examples]
 ---
 
-
+*Reproduce from [Example content - Lanyon](http://lanyon.getpoole.com/2014/01/01/example-content/)*
 <div class="message">
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 </div>
