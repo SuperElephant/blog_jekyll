@@ -17,3 +17,9 @@
 
 - slug: record
   name: Record
+
+- slug: share
+  name: Share
+
+- slug: language
+  name: Language
