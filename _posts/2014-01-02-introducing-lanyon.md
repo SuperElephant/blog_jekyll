@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Introducing Lanyon
-tags: [jekyll, documentation]
+tags: [eng, share]
+excerpt_separator: the Jekyll butler.
 ---
 *Reproduce from [Introducing Lanyon - Lanyon](http://lanyon.getpoole.com/2014/01/02/introducing-lanyon/)*
 

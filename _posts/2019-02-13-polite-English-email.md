@@ -3,7 +3,7 @@ layout: post
 title: 【转】这样写英文Email,对方会感觉你很有礼貌，很有风度，很想帮助你～～～
 tags: [chn, share, language]
 author: "test"
-excerpt_separator: 当一个客户
+excerpt_separator: ##
 ---
 
 *本文转自：[毛琳的日志](http://blog.renren.com/blog/373324548/744666903)*

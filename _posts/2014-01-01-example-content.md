@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Example content
-tags: [jekyll, documentationssss, examples]
+tags: [eng, share]
+excerpt_separator: Cum
 ---
 
 *Reproduce from [Example content - Lanyon](http://lanyon.getpoole.com/2014/01/01/example-content/)*
