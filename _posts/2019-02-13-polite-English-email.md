@@ -1,8 +1,7 @@
 ---
 layout: post
-title: 【转】这样写英文Email,对方会感觉你很有礼貌，很有风度，很想帮助你～～～
+title: "【转】这样写英文Email,对方会感觉你很有礼貌，很有风度，很想帮助你～～～"
 tags: [chn, share, language]
-author: "test"
 excerpt_separator: ##
 ---
 

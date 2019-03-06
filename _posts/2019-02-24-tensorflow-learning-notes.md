@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【Note】TensorFlow快速入门与实战(1)
+title: TensorFlow快速入门与实战笔记(1)
 tags: [chn, it, note]
 excerpt_separator: ###
 ---
@@ -10,7 +10,7 @@ excerpt_separator: ###
 ### 目录
 - [模块与架构]({{post_url}}#模块与架构)
 - [数据流图]({{post_url}}#数据流图)
-- [Tensor]({{post_url}}#Tensor)
+- [Tensor]({{post_url}}#tensor)
     - [Variable]({{post_url}}#variable)
 - [Operation]({{post_url}}#operation)
 - [Session]({{post_url}}#session)
