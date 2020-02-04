@@ -4,6 +4,11 @@ title: "Latex test"
 tags: [eng]
 excerpt_separator: ###
 ---
+
+[TOC]
+# title1
+## 1.1
+# title2
 #### Measure error for on prediction 
 The classification error (0-1 loss) is inappropriate fot the continuous outcomes
 - absolute error: &#124; prediction - sale price &#124;
