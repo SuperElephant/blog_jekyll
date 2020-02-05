@@ -12,17 +12,19 @@ description:         'A persional blog by <a href="https://github.com/SuperEleph
 url:                 https://superelephant.github.io/
 baseurl:             ''
 paginate:            5
+gems:                [jekyll-paginate]
+excerpt_separator:   ""
 
 # About/contact
 author:
   name:              Chaos
-  url:               https://twitter.com/mdo
+  # url:               https://twitter.com/mdo
   email:             hixcwork@163.com
 
 # Custom vars
 version:             1.0.0
 
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate, jekyll-sitemap]
 paginate_path: "page:num"
 
 # Google Analytics

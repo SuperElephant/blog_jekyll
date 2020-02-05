@@ -27,3 +27,7 @@ Find $\tilde{\boldsymbol{w}}^*=\arg\max_{\tilde{\boldsymbol{w}}\in \mathbb{R}^{D
  = (\tilde{\boldsymbol{X}}^T \tilde{\boldsymbol{X}})\tilde{\boldsymbol{w}}-\tilde{\boldsymbol{X}}^T\boldsymbol{y} = 0 \\
  \Rightarrow \tilde{\boldsymbol{w}}^* = (\tilde{\boldsymbol{X}}^T \tilde{\boldsymbol{X}})^{-1}\tilde{\boldsymbol{X}}^T\boldsymbol{y}
  $$
+ $$\nabla\text{RSS}(\tilde{\bm{w}})=2\sum_n \tilde{\bm{x}}_n(\tilde{\bm{x}}_n^T\tilde{\bm{w}}-y_n) \propto (\sum_n \tilde{\bm{x}}_n\tilde{\bm{x}}_n^T)\tilde{\bm{w}}-\sum_n \tilde{\bm{x}}_ny_n \\
+ = (\tilde{\bm{X}}^T \tilde{\bm{X}})\tilde{\bm{w}}-\tilde{\bm{X}}^T\bm{y} = 0 \\
+ \rArr \tilde{\bm{w}}^* = (\tilde{\bm{X}}^T \tilde{\bm{X}})^{-1}\tilde{\bm{X}}^T\bm{y}
+ $$
