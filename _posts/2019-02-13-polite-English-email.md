@@ -2,10 +2,17 @@
 layout: post
 title: "【转】这样写英文Email,对方会感觉你很有礼貌，很有风度，很想帮助你～～～"
 tags: [chn, share, language]
-excerpt_separator: ##
+excerpt_separator: ---
 ---
 
 *本文转自：[毛琳的日志](http://blog.renren.com/blog/373324548/744666903)*
+
+**Outline**
+- 邮件的开头
+- 邮件的结尾
+- 十种场合的表达
+
+---
 
 需要写的英文邮件多了，就觉得很吃力，尤其是当需要经常写给同一个人时。希望邮件的开头、结尾、
 一些客套的话能有不同的表达~~
