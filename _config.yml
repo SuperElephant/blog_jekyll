@@ -12,7 +12,7 @@ description:         'A persional blog by <a href="https://github.com/SuperEleph
 url:                 https://superelephant.github.io/
 baseurl:             ''
 paginate:            5
-gems:                [jekyll-paginate]
+gems:                [jekyll-paginate, jekyll-sitemap]
 excerpt_separator:   ""
 
 # About/contact
