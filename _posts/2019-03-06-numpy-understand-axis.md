@@ -2,7 +2,7 @@
 layout: post
 title: "【转】Numpy:对Axis的理解"
 tags: [chn, it, share]
-excerpt_separator: ###
+excerpt_separator: ---
 ---
 
 *授权转自知乎[周康生：](https://www.zhihu.com/people/dailyobservation/)[Numpy:对Axis的理解](https://zhuanlan.zhihu.com/p/31275071)*
@@ -10,12 +10,13 @@ excerpt_separator: ###
 > 在学习Tensorflows时候对numpy中axis相关操作不大理解。
 > 于是在知乎上找到这篇文章，感觉非常好，在这里分享一下。
 
-### 目录
+**目录**
 - [Axis与数组层级]({{post_url}}#axis与数组层级)
 - [Axis相关操作]({{post_url}}#axis相关操作)
 - [Axis的应用]({{post_url}}#axis的应用)
 
 ---
+
 
 # Axis与数组层级
 
@@ -127,7 +128,7 @@ axis=2表示第三层(下图蓝色框框)，对应轴上的元素length = 4。
 
 ![最终结果](/assets/img/numpy_axis7.jpg){:width="575" style="margin: 0 auto;"}
 
-## 3.四维数组示例：
+## 3.四维数组示例
 
 比如下面这个巨复杂的4维数组，
 

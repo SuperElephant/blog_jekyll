@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Notes] CSCI 585 DB Data modeling"
-tags: [eng, note]
+tags: [585, eng, note]
 excerpt_separator: ---
 ---
 
