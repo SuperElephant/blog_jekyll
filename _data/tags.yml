@@ -6,6 +6,7 @@
 
 - slug: review
   name: Review
+  
 - slug: it
   name: IT
 
@@ -23,3 +24,9 @@
 
 - slug: language
   name: Language
+
+- slug: 585
+  name: 585
+
+- slug: 567
+  name: 567
