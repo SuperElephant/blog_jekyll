@@ -6,7 +6,7 @@
 
 - slug: review
   name: Review
-  
+
 - slug: it
   name: IT
 
@@ -25,8 +25,8 @@
 - slug: language
   name: Language
 
-- slug: 585
-  name: 585
+- slug: csci585
+  name: CSCI585
 
-- slug: 567
-  name: 567
+- slug: csci567
+  name: CSCI567

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Notes] CSCI 585 DB Introduction"
-tags: [585, eng, note]
+tags: [csci585, eng, note]
 excerpt_separator: ---
 ---
 
