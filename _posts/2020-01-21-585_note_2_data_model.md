@@ -5,6 +5,8 @@ tags: [csci585, eng, note]
 excerpt_separator: ---
 ---
 
+*Credit to: Prof. Saty Raghavachary, CSCI 585, Spring 2020*
+
 **Outline**
 - Data modeling and importance
 - Basic data-modeling building blocks

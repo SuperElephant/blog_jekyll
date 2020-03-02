@@ -5,6 +5,8 @@ tags: [csci585, eng, note]
 excerpt_separator: ---
 ---
 
+*Credit to: Prof. Saty Raghavachary, CSCI 585, Spring 2020*
+
 **Outline**
 - Data V.S. Information 
 - Database, types of databases, and why they are valuable assets for decision making 
