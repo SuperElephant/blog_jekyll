@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Notes] CSCI 567 ML KNN and ML system"
+title: "[Notes] CSCI 567 ML lec1 KNN and ML system"
 tags: [csci567, eng, note]
 excerpt_separator: ---
 ---
