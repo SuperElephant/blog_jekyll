@@ -49,7 +49,7 @@ $$
 If the data is linearly separable:
 
 $$
-\exist \boldsymbol{w}, \text{sgn}(\boldsymbol{w}^T\boldsymbol{x}_n)=y_n \\
+\exists \boldsymbol{w}, \text{sgn}(\boldsymbol{w}^T\boldsymbol{x}_n)=y_n \\
 \text{or } y_n\boldsymbol{w}^T\boldsymbol{x}>0
 $$
 
@@ -335,7 +335,7 @@ $$
 \end{aligned}
 $$
 
-where $\ell(w) = \log(P(\boldsymbol{x}_i) P(\boldsymbol{x}_i| y_i ; \boldsymbol{w}))$ called log likelihood
+where $\ell(w) = \log(P(\boldsymbol{x}_i) P(\boldsymbol{x}_i\| y_i ; \boldsymbol{w}))$ called log likelihood
 
 $$
 \begin{aligned}

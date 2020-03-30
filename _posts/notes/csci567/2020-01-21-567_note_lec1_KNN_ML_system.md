@@ -58,18 +58,26 @@ A set of methods that can automatically *detect patterns* in data, and then use 
 ## Nearest Neighbor Classification (NNC)
 It is pretty good classifier, the problem is to define the distance/similarity of cases
 <!-- TODO: None parametric classifier? -->
+
 $$\boldsymbol{x}(1) = \boldsymbol{x}_{\text{nn}(\boldsymbol{x})}$$
+
 where $\boldsymbol{x}(1)$ means the nearest **1** neighbor, $\text{nn}(\boldsymbol{x})\in [N]={1,2,...,N]}$ is the label of given feature vector $\boldsymbol{x}$ 
+
 $$\text{nn}(\boldsymbol{x})=\arg\min _{n\in[N]}\|\boldsymbol{x}-\boldsymbol{x}_n\|_2=\arg\min_{n\in[N]} \sqrt{\sum^D_{d=1}(x_d-x_{nd})^2}$$
+
 where $\|\cdot\|_2$ is the $L_2$ (i.e. Euclidean distance, because that is easy, smooth)
 
 Classification rule: $y=f(\boldsymbol{x})=y_{\text{nn}(\boldsymbol{x})}$
 
 ### Other Distances
 - $L_1$ distance (i.e. Manhattan distance)
+   
    $$\|\boldsymbol{x}-\boldsymbol{x}_n\|_1 = \sum^D_{d=1}|x_d-x_{nd}|$$
+   
 - Generally, $L_p$ distance (for $p\ge 1$)
+   
    $$\|\boldsymbol{x}-\boldsymbol{x}_n\|_p = (\sum^D_{d=1}|x_d-x_{nd}|^p)^{1/p}$$
+
    when $p\rightarrow \infty$ means choosing the maximum difference
 
 ### Decision Boundary
@@ -78,26 +86,37 @@ It is used to observe a known function. (hard to draw when the function is unkno
 
 ### Metric for Performance Evaluation
 - accuracy 
+   
    $$A^\text{TEST}=\frac{1}{M}\sum_m\mathbb{I}[f(\boldsymbol{x}_m)==y_m]$$
+
 - error rate 
+   
    $$\varepsilon^\text{TEST} = \frac{1}{M}\sum_m\mathbb{I}[f(\boldsymbol{x}_m)\neq y_m]$$
+
 where $\mathbb{I}[\cdot]$ is the indicator function. e.g. $\mathbb{I}[\text{true}]=1$, $M$ is the number of test cases.
 
 ### K-Nearest Neighbor (KNN)
 - 1-nearest neighbor: 
+  
   $$\text{nn}_1(\boldsymbol{x})=\arg\max_{n\in[N]}\|\boldsymbol{x}-\boldsymbol{x}_n\|_2$$
+
 - 2-nearest neighbor: 
-  $$\text{nn}_2(\boldsymbol{x})=\arg\max_{n\in[N]-\text{nn}_1(\boldsymbol{x})}\|\boldsymbol{x}-\boldsymbol{x}_n\|_2$$ (label of second nearest neighbor)
+  
+  $$\text{nn}_2(\boldsymbol{x})=\arg\max_{n\in[N]-\text{nn}_1(\boldsymbol{x})}\|\boldsymbol{x}-\boldsymbol{x}_n\|_2$$
+   (label of second nearest neighbor)
 
 #### The set of K-nearest neighbor:
+
 $$\text{knn}(\boldsymbol{x})=\{\text{nn}_1(\boldsymbol{x}),\text{nn}_2(\boldsymbol{x}),..., \text{nn}_K(\boldsymbol{x})\}$$
 
 with $\boldsymbol{x}(k)=\boldsymbol{x}_{\text{nn}_k(\boldsymbol{x})}$ we have, (distence to the first nearest neighbor is smaller then the second nearest neighbor ...)
+
 $$\|\boldsymbol{x}-\boldsymbol{x}(1)\|_2^2\le\|\boldsymbol{x}-\boldsymbol{x}(2)\|_2^2\le ... \le \|\boldsymbol{x}-\boldsymbol{x}(K)\|_2^2$$
 
 #### Classify with K neighbors
 Every neighbor vote and pick the majority. 
 There can be many ways to do that e.g. weighted vote, take simple majority with odd number of neighbors, etc.
+
 $$y=f(\boldsymbol{x})=\arg\max_{c\in [C]} \sum_{n\in \text{knn}(\boldsymbol{x})}\mathbb{I}(y_n==c), \forall c\in[C]$$
 
 ### Preprocessing data
@@ -105,8 +124,12 @@ issue: distance depend on units of the features
 solution: preprocess data, "normalized"
 
 one example:
-- mean: $$\bar{x}_d=\frac{1}{N}\sum_nx_{nd}$$
-- standard deviations: $$s^2_d=\frac{1}{N-1}\sum_n(x_{nd}-\bar{x}_d)^2$$
+- mean: 
+  
+  $$\bar{x}_d=\frac{1}{N}\sum_nx_{nd}$$
+- standard deviations: 
+  
+  $$s^2_d=\frac{1}{N-1}\sum_n(x_{nd}-\bar{x}_d)^2$$
 - Scale the feature
   
    $$x_{nd} \leftarrow\frac{x_{nd}-\bar{x}_d}{s_d}$$
@@ -165,10 +188,13 @@ To answer the question, how good is NNC really?
 #### Why does test error make sense
 only when training set and test set are correlated
 **Most standard assumption**: every data point $(x,y)$ (from $\mathcal{D}$) is an independent and identically distributed (i.i.d.) sample of an unknown joint distribution $\mathcal{P}$. Written as,
+
 $$(x,y)\overset{i.i.d.}{\sim}\mathcal{P}$$
 Test error of a fixed classifier is therefore a random variable
 #### Expect error
+
 $$\mathbb{E}[\varepsilon^\text{TEST}]=\frac{1}{M}\sum^M_{m=1}\mathbb{E}_{(\boldsymbol{x}_m,y_m)\sim\mathcal{P}}\mathbb{I}[f(\boldsymbol{x}_m)\neq y_m] = \mathbb{E}_{(\boldsymbol{x},y)\sim\mathcal{P}}\mathbb{I}[f(\boldsymbol{x})\neq y]$$
+
 i.e. the expected error/mistake of $f$, given assumption i.i.d..
 
 Test error is a proxy of expected error. The larger the test set, the better the approximation.
@@ -178,6 +204,7 @@ Extend concept of expect error.
 More generally for a loss function $L(y',y)$
 - when $L(y', y)=\mathbb{I}[y'\neq y]$, it is called 0-1 loss
 The expected risk of $f$ is defined as $R(f)$ risk, (the expectation of loss function)
+
 $$R(f)=\mathbb{E}_{(\boldsymbol{x},y)\sim\mathcal{P}}L(f(\boldsymbol{x}), y)$$
 
 ### The ideal classifier
@@ -187,6 +214,7 @@ $$R(f)=\mathbb{E}_{(\boldsymbol{x},y)\sim\mathcal{P}}L(f(\boldsymbol{x}), y)$$
 $$f^*(x)=\arg\max_{c\in[C]}\mathcal{P}(c|x)$$
 
 **The optimal risk:**
+
 $$R(f^*)=\mathbb{E}_{x\sim\mathcal{P}_x}[1-\max_{c\in [C]}\mathcal{P}(c|x)]$$
 
 $$R(f^*)=\mathbb{E}_{\mathcal{P}(\boldsymbol{x},y)}\mathbb{I}(f^*(x),y)\\
