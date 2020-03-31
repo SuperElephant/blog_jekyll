@@ -116,10 +116,11 @@ Distributed processing and scalability
   - Known as **web-to-database middleware**
   - Provides its services to the web server in a way that is totally transparent to the client browser
 
+![Web-to-Database Middleware](http://bytes.usc.edu/cs585/s20_db0ds1ml2agi/lectures/DBConn/pics/s028.png)
 
-fig
+![WebToDB](http://bytes.usc.edu/cs585/s20_db0ds1ml2agi/lectures/DBConn/pics/WebToDB.png)
 
-
+![](http://bytes.usc.edu/cs585/s20_db0ds1ml2agi/lectures/DBConn/pics/s029.png)
 
 <!-- Middleware must be well integrated
 Web-to-Database Middleware
@@ -136,7 +137,7 @@ Stateless system: Web server does not know the status of any clients -->
 - Add functionality to Web browser
 - Types
   - **Plug-in**: external application automatically invoked by the browser when needed 
-  - J**ava and JavaScript**: Embedded in web page
+  - **Java and JavaScript**: Embedded in web page
     - Downloaded with the web page and activated by an event 
   - **Active X and VBScript**: embedded in web page
     - Download with page and activated by event 
@@ -145,6 +146,7 @@ Stateless system: Web server does not know the status of any clients -->
 #### Web Application Servers
 A 'web application server' is a specialized server that interfaces with web services such as databases, search engines. 
 The client (eg browser) can query these data sources and have results generated dynamically.
+
 - Middleware application that expands the functionality of web servers by linking them to a wide range of services
 - Uses
   - Connect to and query database from web page
