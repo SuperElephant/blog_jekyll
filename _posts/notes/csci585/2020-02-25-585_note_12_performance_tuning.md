@@ -18,6 +18,7 @@ excerpt_separator: ---
 - Some common practices used to write efficient SQL code
 - How to formulate queries and tune the DBMS for optimal performance
 
+---
 
 ## Database Performance-Tuning 
 

@@ -1,3 +1,15 @@
+---
+layout: post
+title: "[Notes] CSCI 585 discussion 7 
+"
+tags: [csci585, eng, note]
+excerpt_separator: ---
+---
+
+About Data Science
+
+---
+
 Functional programming, languages... Why is functional programming relevant/related to Big Data processing?
 - passing the function to map which take function as an input
 
