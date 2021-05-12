@@ -9,8 +9,8 @@ title:               Netside
 tagline:             'where knowledge is shared, ideas are spread.'
 description:         'A persional blog by <a href="https://github.com/SuperElephant" target="_blank">@SuperElephant</a>'
 # description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 'https://github.com/SuperElephant'
-baseurl:             '/old_blog'
+url:                 'https://github.com/SuperElephant/old_blog'
+baseurl:             ''
 paginate:            5
 gems:                [jekyll-paginate, jekyll-sitemap]
 excerpt_separator:   ""
