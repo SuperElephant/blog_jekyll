@@ -90,7 +90,7 @@ excerpt_separator: ---
 
 At first, data was stored in individual files (transitioned from paper). 
 The next improvement was a 'hierarchical DB model', where data was structured in the form of a tree [similar to a modern filesystem]. Data, in the form of nodes, are linked in a tree-like fashion. To traverse the tree, we need to know the underlying format ('class hierarchy, to make an analogy with classes and objects), and the actual path [eg. to relate A1 and D2, we need to traverse A1->B1->C3>D2]. (Notice, add or delete node may break the link, i.e., **structure dependent**)
-![Hierarchical modeling](/assets/img/hierModel.jpg)
+![Hierarchical modeling]({{site.baseurl}}/assets/img/hierModel.jpg)
 Hierarchies are good for '1:M' [tree], but not 'M:N' [graph or multiple inheritance].
 
 - Manage large amounts of data for complex manufacturing projects
@@ -115,7 +115,7 @@ Hierarchies are good for '1:M' [tree], but not 'M:N' [graph or multiple inherita
 
 ### Network modeling
 A network model is better than a hierarchical one, because it can capture M:N [in addition to the above, another example is 'products and orders']. (structure dependence)
-![network modeling](/assets/img/Netw.jpg)
+![network modeling]({{site.baseurl}}/assets/img/Netw.jpg)
 
 - Represent complex data relationships 
 - Improve database performance and impose a database standard
@@ -186,7 +186,7 @@ A network model is better than a hierarchical one, because it can capture M:N [i
 - ~~No data manipulation language~~
 - ~~Loss of information content occurs when attributes are removed from entities to avoid crowded displays~~
 
-![The ER Model Notations](/assets/img/24.jpg)
+![The ER Model Notations]({{site.baseurl}}/assets/img/24.jpg)
 
 More notations: Additional reading: [here](http://bytes.usc.edu/cs585/s20_db0ds1ml2agi/lectures/DataModeling/more/notations.pdf) is information on, and comparison between, four ER notations: Chen, Crow, Rein85, IDEFIX.
 
@@ -218,13 +218,13 @@ These are a compromise between RDBs and OODBs - they feature an O-O front-end ov
 - performance can be poor on account of the two-way translation
 
 
-![Evolution of Data Models](/assets/img/36.jpg)
+![Evolution of Data Models]({{site.baseurl}}/assets/img/36.jpg)
 Data models have evolved - from 'hierarchical' (very rigid) to 'NoSQL' (VERY flexible).
 
 ## Models classified by their level of abstraction
 
 ### Layered data abstraction
-![Layered data abstraction](/assets/img/37.jpg)
+![Layered data abstraction]({{site.baseurl}}/assets/img/37.jpg)
 
 ### The External Model 
 An external model is a collection of 'fragmented', 'from the stakeholders' POV', modeling of a database.
@@ -232,7 +232,7 @@ An external model is a collection of 'fragmented', 'from the stakeholders' POV',
 - ER diagrams are used to represent the external views
 - **External schema**: Specific representation of an external view
 
-![External Model](/assets/img/39.jpg)
+![External Model]({{site.baseurl}}/assets/img/39.jpg)
 
 ### The Conceptual Model 
 - Represents a global view of the entire database by the entire organization
@@ -241,7 +241,7 @@ An external model is a collection of 'fragmented', 'from the stakeholders' POV',
 - Is software and hardware independent
 - **Logical design**: Task of creating a conceptual data model
 
-![Conceptual Model for Tiny College](/assets/img/41.jpg)
+![Conceptual Model for Tiny College]({{site.baseurl}}/assets/img/41.jpg)
 
 ### The Internal Model
 An internal model specifies what type of modeling (eg. relational, NoSQL...) to use for storing the data.
@@ -250,7 +250,7 @@ An internal model specifies what type of modeling (eg. relational, NoSQL...) to 
 - Uses the database constructs supported by the chosen database
 - Is software dependent and hardware independent
 - **Logical independence**: Changing internal model without affecting the conceptual model
-![Internal Model for Tiny College](/assets/img/43.jpg)
+![Internal Model for Tiny College]({{site.baseurl}}/assets/img/43.jpg)
 
 ### The Physical Model
 The physical model specifies actual data storage specifics (file format, APIs...).

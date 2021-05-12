@@ -232,7 +232,7 @@ $$R(f^*)=\mathbb{E}_{x\sim\mathcal{P}_x}[\min\{\eta(x), 1-\eta(x)\}]$$
 Theorem (Cover and Hart, 1967)
 $$R(f^*)\leq \lim_{N\rightarrow\infty} \mathbb{E}[R(f_N)]\leq 2R(f^*)$$
 Where $f_N$ be the 1-nearest neighbor binary classifier using $N$ training data points.
-![derivation process](/assets/img/ml_week1_1.png)
+![derivation process]({{site.baseurl}}/assets/img/ml_week1_1.png)
 
 With that it has a strong guarantee that $R(f^*)=0 \Rightarrow\mathbb{E}[R(f_N)]\rightarrow 0$
 Thus NNC is very close to optimal solution, the problem is how to defined the distance 

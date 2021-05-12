@@ -46,7 +46,7 @@ Each project has a number, name and assigned employees. An employee can be assig
 
 The company bills clients for projects, based on hours worked by employees.
 
-![0NF](/assets/img/585_norm_0nf.png)
+![0NF]({{site.baseurl}}/assets/img/585_norm_0nf.png)
 
 There are numerous issues:
 
@@ -76,7 +76,7 @@ So, we need to clean up the design!
   - Identifying the dependencies of a relation (table)
   - Progressively breaking the relation into new set of relations
 
-![Table 6.2 - Normal Forms](/assets/img/585_norm_6.2.png)
+![Table 6.2 - Normal Forms]({{site.baseurl}}/assets/img/585_norm_6.2.png)
 
 
 Normalization how-to, in one sentence: work on one relation (table) at a time: identify dependencies, then 'normalize' - progressively break it down into smaller relations (tables), based on the dependencies we identify in the original relation.
@@ -120,7 +120,7 @@ eliminate repeating groups
 
 Indicate full dependencies on the top, and partial and transitive dependencies on the bottom. "Top good, bottom bad". Also, color the PK components in a different color (and underline them). Result:
 
-![Figure 6.3 - First Normal Form (1NF) Dependency Diagram](/assets/img/585_norm_6.3.png)
+![Figure 6.3 - First Normal Form (1NF) Dependency Diagram]({{site.baseurl}}/assets/img/585_norm_6.3.png)
 
 PROJ_NAME has only a partial dependency on the PK (since it is only dependent on PROJ_NUM, which is just a part of the PK).
 
@@ -148,7 +148,7 @@ remove partial dependencies
   - Is in 1NF
   - Includes no partial dependencies
 
-![Figure 6.4 - Second Normal Form (2NF) Conversion Results](/assets/img/585_norm_6.4.png)
+![Figure 6.4 - Second Normal Form (2NF) Conversion Results]({{site.baseurl}}/assets/img/585_norm_6.4.png)
 
 We eliminate partial dependencies by **creating separate tables** of such dependencies, and removing the dependent attributes from the starter table.
 
@@ -165,7 +165,7 @@ Whether we eliminate partial dependencies (to create 2NF) or transitive ones (to
   - Is in 2NF
   - Contains no transitive dependencies
 
-![Figure 6.5 - Third Normal Form (3NF) Conversion Results](/assets/img/585_norm_6.5.png)
+![Figure 6.5 - Third Normal Form (3NF) Conversion Results]({{site.baseurl}}/assets/img/585_norm_6.5.png)
 
 
 ### Requirements for Good Normalized Set of Tables 
@@ -191,10 +191,10 @@ We can create a better DB by doing the following augmentations, to the 3NF model
 - evaluate derived attrs, eg. ASSIGN_CHARGE
 
 
-![Figure 6.6 - The Completed Database](/assets/img/585_norm_6.6.png)
-![Figure 6.6 - The Completed Database](/assets/img/585_norm_6.6.2.png)
-![Figure 6.6 - The Completed Database](/assets/img/585_norm_6.6.3.png)
-![Figure 6.6 - The Completed Database](/assets/img/585_norm_6.6.4.png)
+![Figure 6.6 - The Completed Database]({{site.baseurl}}/assets/img/585_norm_6.6.png)
+![Figure 6.6 - The Completed Database]({{site.baseurl}}/assets/img/585_norm_6.6.2.png)
+![Figure 6.6 - The Completed Database]({{site.baseurl}}/assets/img/585_norm_6.6.3.png)
+![Figure 6.6 - The Completed Database]({{site.baseurl}}/assets/img/585_norm_6.6.4.png)
 
 
 ### Normalization: summary

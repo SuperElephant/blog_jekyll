@@ -23,7 +23,7 @@ excerpt_separator: ---
 - Logical simplicity yields simple and effective database design methodologies 
 - Facilitated by the creation of data relationships based on a logical construct called a relation 
 
-![Characteristics of a Relational Table](/assets/img/s3_4.png)
+![Characteristics of a Relational Table]({{site.baseurl}}/assets/img/s3_4.png)
 
 ## Keys
 - Consist of one or more attributes that determine other attributes
@@ -58,7 +58,7 @@ e.g.
 
 - **Referential integrity**: Every reference to an entity instance by another entity instance is valid. Whereas entity integrity has to do with a single table, referential integrity relates to two tables (loosely, 'don't allow invalid pointers').
 
-![Relational Database Keys](/assets/img/s9_4.png)
+![Relational Database Keys]({{site.baseurl}}/assets/img/s9_4.png)
 
 - **primary (foreign) keys** are a subset of candidate keys are a subset of superkeys (note - superkeys could be 'wasteful', ie. contain superfluous, non-needed attrs)
 - simple keys vs compound keys vs composite keys
@@ -97,35 +97,35 @@ This is no exaggeration: these operators are the basis for SQL and the entire re
 ### Relational Set Operators
 - Select (Restrict)
   - Unary operator that yields a horizontal subset of a table
-  ![Select](/assets/img/34_4.png)
+  ![Select]({{site.baseurl}}/assets/img/34_4.png)
 - Project
   - Unary operator that yields a vertical subset of a table
-  ![Project](/assets/img/35_4.png)
+  ![Project]({{site.baseurl}}/assets/img/35_4.png)
 - Union
   - Combines all rows from two tables, excluding duplicate rows
   - Union-compatible: Tables share the same number of columns, and their corresponding columns share compatible domains
-  ![Union](/assets/img/36_4.png)
+  ![Union]({{site.baseurl}}/assets/img/36_4.png)
 - Intersect
   - Yields only the rows that appear in both tables
   - Tables must be union-compatible to yield valid results
-  ![Intersect](/assets/img/37_4.png)
+  ![Intersect]({{site.baseurl}}/assets/img/37_4.png)
 
 ### Relational Set Operators
 - Difference 
   - Yields all rows in one table that are not found in the other table
   - Tables must be union-compatible to yield valid results 
-  ![Difference](/assets/img/38_4.png)
+  ![Difference]({{site.baseurl}}/assets/img/38_4.png)
 - Product 
   - Yields all possible pairs of rows from two tables
   - Relational Set Operators
-  ![Product](/assets/img/39_4.png)
+  ![Product]({{site.baseurl}}/assets/img/39_4.png)
 - Join
   - Allows information to be intelligently combined from two or more tables 
-  ![Two Tables That Will Be Used in JOIN Illustrations](/assets/img/310_4.png)
+  ![Two Tables That Will Be Used in JOIN Illustrations]({{site.baseurl}}/assets/img/310_4.png)
 - Divide
   - Uses one 2-column table as the dividend and one single-column table as the divisor
   - Output is a single column that contains all values from the second column of the dividend that are associated with every row in the divisor
-  ![Divide](/assets/img/316_4.png)
+  ![Divide]({{site.baseurl}}/assets/img/316_4.png)
 
 #### Types of Joins 
 - **Natural join**: Links tables by selecting only the rows with common values in their common attributes, A natural join links tables by selecting from two tables, only those rows that have common (identical) values for common attributes.

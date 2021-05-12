@@ -39,7 +39,7 @@ array([[1, 2, 3],
 第1维(axis=1)也有三个元素(右图)，即axis=1轴的长度length为3。
 正是因为axis=0、axis=1的长度都为3，矩阵横着竖着都有3个数，所以该矩阵在线性代数是3维的(rank秩为3)。
 
-![axis就是数组层级](/assets/img/numpy_axis1.jpg){:width="300" style="margin: 0 auto;"}
+![axis就是数组层级]({{site.baseurl}}/assets/img/numpy_axis1.jpg){:width="300" style="margin: 0 auto;"}
 
 因此，axis就是数组层级。
 
@@ -80,7 +80,7 @@ axis=0表示第一层(下图黑色框框)，该层数组的size为3，对应轴�
 axis=1表示第二层(下图红色框框)，该层数组的size为2，对应轴上的元素length = 2；
 axis=2表示第三层(下图蓝色框框)，对应轴上的元素length = 4。
 
-![多层layers](/assets/img/numpy_axis2.jpg){:width="350" style="margin: 0 auto;"}
+![多层layers]({{site.baseurl}}/assets/img/numpy_axis2.jpg){:width="350" style="margin: 0 auto;"}
 
 
 # Axis相关操作
@@ -90,7 +90,7 @@ axis=2表示第三层(下图蓝色框框)，对应轴上的元素length = 4。
 比如`np.sum(a, axis=1)`，结合下面的数组，
 `a[0][0]=1`、`a[0][1]=2`、`a[0][2]=3 `，下标会发生变化的方向是数组的第一维。
 
-![二维数组](/assets/img/numpy_axis3.jpg){:width="200" style="margin: 0 auto;"}
+![二维数组]({{site.baseurl}}/assets/img/numpy_axis3.jpg){:width="200" style="margin: 0 auto;"}
 
 我们往下标会变化的方向，把元素相加后即可得到最终结果：
 {% highlight py%}
@@ -106,27 +106,27 @@ axis=2表示第三层(下图蓝色框框)，对应轴上的元素length = 4。
 该数组第0维的长度为3(黑色框框)，再深入一层，
 第1维的长度为2(红色框框)，再深入一层，第2维的长度为4(蓝色框框)。
 
-![三维数组示](/assets/img/numpy_axis4.jpg){:width="625" style="margin: 0 auto;"}
+![三维数组示]({{site.baseurl}}/assets/img/numpy_axis4.jpg){:width="625" style="margin: 0 auto;"}
 
 如果我们要计算`np.sum(a, axis=1)`，在第一个黑色框框中，
 
-![np.sum(a, axis=1)](/assets/img/numpy_axis5.jpg){:width="175" style="margin: 0 auto;"}
+![np.sum(a, axis=1)]({{site.baseurl}}/assets/img/numpy_axis5.jpg){:width="175" style="margin: 0 auto;"}
 
 下标的变化方向如下所示：
 
-![下标的变化](/assets/img/numpy_axis5.jpg){:width="175" style="margin: 0 auto;"}
+![下标的变化]({{site.baseurl}}/assets/img/numpy_axis5.jpg){:width="175" style="margin: 0 auto;"}
 
 所以，我们要把上下两个红色框框相加起来
 
-![红色框框相加](/assets/img/numpy_axis6.jpg){:width="425" style="margin: 0 auto;"}
+![红色框框相加]({{site.baseurl}}/assets/img/numpy_axis6.jpg){:width="425" style="margin: 0 auto;"}
 
 按照同样的逻辑处理第二个和第三个黑色的框框，可以得出最终结果：
 
-![最终结果](/assets/img/numpy_axis7.jpg){:width="575" style="margin: 0 auto;"}
+![最终结果]({{site.baseurl}}/assets/img/numpy_axis7.jpg){:width="575" style="margin: 0 auto;"}
 
 所以，依然是我们前边总结的那一句话，设axis=i，则Numpy沿着第i个下标变化的方向进行操作。
 
-![最终结果](/assets/img/numpy_axis7.jpg){:width="575" style="margin: 0 auto;"}
+![最终结果]({{site.baseurl}}/assets/img/numpy_axis7.jpg){:width="575" style="margin: 0 auto;"}
 
 ## 3.四维数组示例
 

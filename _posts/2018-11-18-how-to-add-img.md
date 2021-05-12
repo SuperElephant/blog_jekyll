@@ -13,10 +13,10 @@ To insert image in the blog we can simply use
 
 However, if we need to adjust the size of the picture, you can use html tag
 {% highlight ruby %}
-<img src="/assets/img/test.jpg" width="50%" alt="AltText" />
+<img src="{{site.baseurl}}/assets/img/test.jpg" width="50%" alt="AltText" />
 {% endhighlight %}
 
 Also, you can use the mix style:
 {% highlight ruby%}
-![AltText](/assets/img/test.jpg){:width="70%"}
+![AltText]({{site.baseurl}}/assets/img/test.jpg){:width="70%"}
 {% endhighlight %}

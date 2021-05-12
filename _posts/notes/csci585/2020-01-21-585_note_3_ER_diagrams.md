@@ -35,7 +35,7 @@ excerpt_separator: ---
 An identifier is also called a KEY, or PRIMARY KEY - **this is one of the 'key' concepts in all of database theory!!** We'll talk much more about keys later.
 
 
-![The Attributes of the Student Entity: Chen and Crow’s Foot](/assets/img/s4.png)
+![The Attributes of the Student Entity: Chen and Crow’s Foot]({{site.baseurl}}/assets/img/s4.png)
 
 Notice: the bold attributes in crow's foot model means required attribute
 
@@ -47,7 +47,7 @@ Notice: the bold attributes in crow's foot model means required attribute
 
 
 
-![A Multivalued Attribute in an Entity](/assets/img/s6.png)
+![A Multivalued Attribute in an Entity]({{site.baseurl}}/assets/img/s6.png)
 
 
 - **Multi-valued attributes**: Attributes that have many values and require creating:
@@ -57,8 +57,8 @@ Notice: the bold attributes in crow's foot model means required attribute
   - Derived using   an algorithm 
 
 
-![Depiction of a Derived Attribute](/assets/img/s8.png)
-![Advantages and Disadvantages of Storing Derived Attributes](/assets/img/s9.png)
+![Depiction of a Derived Attribute]({{site.baseurl}}/assets/img/s8.png)
+![Advantages and Disadvantages of Storing Derived Attributes]({{site.baseurl}}/assets/img/s9.png)
 
 ## Relationships
 - Association between entities that always operate in both directions
@@ -66,7 +66,7 @@ Notice: the bold attributes in crow's foot model means required attribute
 - **Connectivity**: Describes the relationship classification (1:1), (1:M), (M:N)
 - **Cardinality**: Expresses the minimum and maximum number of entity occurrences associated with one occurrence of related entity
 
-![Connectivity and Cardinality in an ERD](/assets/img/s11.png)
+![Connectivity and Cardinality in an ERD]({{site.baseurl}}/assets/img/s11.png)
 
 Connectivity: 1:1, 1:M or M:N (three diff ways by which two entities are related).
 
@@ -94,11 +94,11 @@ Eg. if A is EMPLOYEE and B is DEPENDENT, a dependent (eg. child) in B can only e
 - Weak (non-identifying) relationship
   - Primary key of the related entity does not contain a primary key component of the parent entity
 
-![A Weak (Non-Identifying) Relationship between COURSE and CLASS](/assets/img/48.png)
+![A Weak (Non-Identifying) Relationship between COURSE and CLASS]({{site.baseurl}}/assets/img/48.png)
 - Strong (identifying) relationships
   - Primary key of the related entity contains a primary key component of the parent entity
 
-![A Strong (Identifying) Relationship between COURSE and CLASS](/assets/img/49.png)
+![A Strong (Identifying) Relationship between COURSE and CLASS]({{site.baseurl}}/assets/img/49.png)
 
 #### Weak Entity
 A weak entity needs to satisfy two conditions: 
@@ -115,8 +115,8 @@ Removing the controlling (owning) entity's key from a weak entity's PK will resu
   - Has a primary key that is partially or totally derived from parent entity in the relationship
 - Database designer determines whether an entity is weak based on business rules
 
-![A Weak Entity in an ERD](/assets/img/410.png)
-![A Weak Entity in a Strong Relationship](/assets/img/411.png)
+![A Weak Entity in an ERD]({{site.baseurl}}/assets/img/410.png)
+![A Weak Entity in a Strong Relationship]({{site.baseurl}}/assets/img/411.png)
 
 ### Relationship Participation
 - Optional participation
@@ -125,9 +125,9 @@ Removing the controlling (owning) entity's key from a weak entity's PK will resu
   - One entity occurrence requires a corresponding entity occurrence in a particular relationship
 
 
-![Crow’s Foot Symbols](/assets/img/Picture1.png)
-![CLASS is Optional to COURSE](/assets/img/413.png)
-![COURSE and CLASS in a Mandatory Relationship](/assets/img/414.png)
+![Crow’s Foot Symbols]({{site.baseurl}}/assets/img/Picture1.png)
+![CLASS is Optional to COURSE]({{site.baseurl}}/assets/img/413.png)
+![COURSE and CLASS in a Mandatory Relationship]({{site.baseurl}}/assets/img/414.png)
 
 ### Relationship Degree
 - Indicates the number of entities or participants associated with a relationship
@@ -136,8 +136,8 @@ Removing the controlling (owning) entity's key from a weak entity's PK will resu
 - **Binary relationship**: Two entities are associated
 - **Ternary relationship**: Three entities are associated
 
-![Three Types of Relationship Degree](/assets/img/415.png)
-![An ER Representation of Recursive Relationships](/assets/img/417.png)
+![Three Types of Relationship Degree]({{site.baseurl}}/assets/img/415.png)
+![An ER Representation of Recursive Relationships]({{site.baseurl}}/assets/img/417.png)
 ### Associative Entities
 - Also known as composite or bridge entities
 - Used to represent an M:N relationship between two or more entities
@@ -146,9 +146,9 @@ Removing the controlling (owning) entity's key from a weak entity's PK will resu
 - May also contain additional attributes that play no role in connective process
 
 
-![Converting the M:N Relationship into Two 1:M Relationships](/assets/img/423.png)
+![Converting the M:N Relationship into Two 1:M Relationships]({{site.baseurl}}/assets/img/423.png)
 
-![A Composite Entity in an ERD](/assets/img/425.png)
+![A Composite Entity in an ERD]({{site.baseurl}}/assets/img/425.png)
 
 ## Developing an ER Diagram
 - Create a detailed narrative of the organization’s  description of operations

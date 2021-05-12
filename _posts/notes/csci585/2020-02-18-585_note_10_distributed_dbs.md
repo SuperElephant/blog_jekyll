@@ -257,7 +257,7 @@ the CAP Theorem was a reminder that it is usually difficult to achieve C,A,P all
 In today's '**BASE**' (Basically Available, Soft_state, Eventually_consistent) model of non-relational (eg. NoSQL) DBs, 
 we prefer to sacrifice consistency in favor of **availability**.
 
-![](/assets/img/585_note_10_2.png)
+![]({{site.baseurl}}/assets/img/585_note_10_2.png)
 
 ## Date's '12 commandments' for distributed DBMSs
 

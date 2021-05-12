@@ -22,22 +22,22 @@ excerpt_separator: ###
 
 ## API
 不同级别的API
-![不同级别的API](/assets/img/tf_api_level.png){:width="100%"}
+![不同级别的API]({{site.baseurl}}/assets/img/tf_api_level.png){:width="100%"}
 
 ## 架构
 在应用层，几种语言的 API 都是建立在 C API的封装（除了C++拥有一套完整的封装）
 运行核心实现了一些运算中的关键数据结构。具体而言包含Tensor和相关操作的定义等等。
 而运行操作是由下面的核函数实现的。
 XLA，通过中间表示层和编译器的优化，将可化简的运算合并为更大粒度的运算提高效率。
-![Tensorflow架构](/assets/img/tf_structure.png){:width="100%"}
+![Tensorflow架构]({{site.baseurl}}/assets/img/tf_structure.png){:width="100%"}
 
 # 数据流图
 TensorFlow 数据流腿是一种声明式的编程范式。相比命令式更加靠近目的，靠近数理逻辑。
 更加适用于结构化抽象画。
-![申明式编程](/assets/img/declar_prog.png){:width="100%"}
+![申明式编程]({{site.baseurl}}/assets/img/declar_prog.png){:width="100%"}
 
 从入度为零的点开始计算。
-![数据流图结构](/assets/img/dataflow_graph.png){:width="80%"}
+![数据流图结构]({{site.baseurl}}/assets/img/dataflow_graph.png){:width="80%"}
 
 ## 优势
 - 并行计算快（损耗低）
@@ -93,7 +93,7 @@ w.assign_add(1.0)
 Notice：这里仅仅是在描述，没有真正进行计算
 
 ### 变量使用流程
-![变量使用流程](/assets/img/var_useage.png){:width="80%"}
+![变量使用流程]({{site.baseurl}}/assets/img/var_useage.png){:width="80%"}
 {% highlight ruby%}
 v1 = tf.Variable(..., name='v1')
 v2 = tf.Variable(..., name='v2')
@@ -118,7 +118,7 @@ saver.restore(sess, 'my-model-0')
 - 数据节点：数据的占位符操作，用于描述图外输入数据的属性；
 
 ## 典型的计算和控制操作
-![典型的计算和控制操作](/assets/img/typical_op.png){:width="78%"}
+![典型的计算和控制操作]({{site.baseurl}}/assets/img/typical_op.png){:width="78%"}
 
 ## Placeholder
 表示图外输入的数据，e.g训练和测试数据。
@@ -168,7 +168,7 @@ print(sess.run(z, feed_dict={x: 3.0, y:2.0}))
 {% endhighlight %}
 
 ## 会话操作
-![会话的执行](/assets/img/sess_ex.png)
+![会话的执行]({{site.baseurl}}/assets/img/sess_ex.png)
 获取张量值的另外两种方法：估算张量（`Tensor.eval`）与执行操作（`Operation.run`）
 {% highlight ruby%}
 import tensorflow as tf
@@ -199,7 +199,7 @@ with tf.Session() as sess:
 with tf.device("/cpu:0"):
     v = tf.Variable(...)
 {% endhighlight %}
-![会话的本地计算](/assets/img/sess_loc.png)
+![会话的本地计算]({{site.baseurl}}/assets/img/sess_loc.png)
 
 
 # Optimizer
@@ -207,7 +207,7 @@ with tf.device("/cpu:0"):
 1. 模型：`y = f(x) = w * x + b`，其中x是输入数据，y是模型输出的推理值，w和b是模型参数（训练的对象）。
 2. 损失函数：`loss = L(y,y_-)`，其中y_是x对应真实值，loss为损失函数输出的损失值。
 3. 优化算法：`w <- w + alpha * grad(w), b <- b + alpha * grad(b)`，其中grad(w)和grad(b)分别表示当损失值为loss时，模型参数w和b各自的梯度值，alpha为学习率。
-![训练结构](/assets/img/train_pros.png)
+![训练结构]({{site.baseurl}}/assets/img/train_pros.png)
 
 ## 优化器
 优化器是实现优化算法个的载体。
@@ -236,4 +236,4 @@ train_op = optimizer.minimize(loss, global_step=global_step)
 {% endhighlight %}
 
 ### 内置优化器
-![内置优化器列表](/assets/img/opt_list.png)
+![内置优化器列表]({{site.baseurl}}/assets/img/opt_list.png)

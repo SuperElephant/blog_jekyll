@@ -47,7 +47,7 @@ excerpt_separator: ---
   - Receives and translate application requests in to operations required to fulfill the requests
   - Hide database's internal complexity from the application progeams and users
 
-![DBMS](/assets/img/Screen&#32;Shot&#32;2020-02-02&#32;at&#32;22.25.49.png)
+![DBMS]({{site.baseurl}}/assets/img/Screen&#32;Shot&#32;2020-02-02&#32;at&#32;22.25.49.png)
 
 #### Advantage
 - Better data integration and less data inconsistency
